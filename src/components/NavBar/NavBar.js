@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import { LinkContainer } from 'react-router-bootstrap';
@@ -16,8 +15,8 @@ const NavBar = (props) => (
                     <LinkContainer exact to='/'>
                         <Nav.Link>Accueil</Nav.Link>
                     </LinkContainer>
-                    <LinkContainer to='/location'>
-                        <Nav.Link>Location</Nav.Link>
+                    <LinkContainer to='/localisation'>
+                        <Nav.Link>Localisation</Nav.Link>
                     </LinkContainer>
                     <LinkContainer to='/contact'>
                         <Nav.Link>Contact</Nav.Link>

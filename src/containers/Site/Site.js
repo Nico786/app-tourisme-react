@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Accueil from './Accueil/Accueil';
-import Location from './Location/Location';
+import Location from './Localisation/Localisation';
 import Contact from './Contact/Contact';
 import NavBar from '../../components/NavBar/NavBar';
 import { Route, Switch } from 'react-router';
@@ -17,7 +17,7 @@ class Site extends Component {
                     <Container>
                         <Switch>
                             <Route path="/" exact render={() => <Accueil />} />
-                            <Route path="/location" render={() => <Location />} />
+                            <Route path="/localisation" render={() => <Location />} />
                             <Route path="/contact" render={(props) => <Contact {...props} />} />
                             <Route render={() => <Error404 />} />
                         </Switch>
